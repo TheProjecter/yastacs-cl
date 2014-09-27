@@ -1,0 +1,47 @@
+# use glob syntax.
+syntax: glob
+
+#*.elc
+#*.pyc
+*~
+*.user
+*.ncb
+*.suo
+*.build
+*.build.cmd
+*.build.rsp
+*.build.lnkarg
+*.buildlog.html
+*.dep
+*.obj
+*.map
+*.exe_cv
+*.cmake
+*.XML
+*.pdb
+*.orig
+*.fas
+*.fasc
+*.asd
+**/*.filters
+**/ipch
+**/*.sdf
+**/*.opensdf
+
+# switch to regexp syntax.
+syntax: regexp
+#^\.pc/
+^debug-bin/.*\.dll$
+^debug-bin/.*\.exe$
+^debug-bin/.*\.log$
+^debug-bin/.*\.exp$
+^debug-bin/.*\.ilk$
+^debug-bin/.*\.lib$
+^release-bin/.*\.dll$
+^release-bin/.*\.exe$
+^release-bin/.*\.log$
+^release-bin/.*\.exp$
+^release-bin/.*\.ilk$
+^release-bin/.*\.lib$
+^tmp/.*
+data/.*
