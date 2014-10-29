@@ -1,1 +1,4 @@
-This is the stub README.txt for the "yastacs" project.
+YASTACS lisp source README
+==========================
+
+

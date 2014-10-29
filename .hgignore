@@ -29,6 +29,7 @@ syntax: glob
 **/*.opensdf
 
 # switch to regexp syntax.
+**.wx32fsl
 syntax: regexp
 #^\.pc/
 ^debug-bin/.*\.dll$
