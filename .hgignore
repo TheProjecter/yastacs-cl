@@ -22,7 +22,6 @@ syntax: glob
 *.orig
 *.fas
 *.fasc
-*.asd
 **/*.filters
 **/ipch
 **/*.sdf
