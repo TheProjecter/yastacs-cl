@@ -9,7 +9,7 @@
   :description "Yet Another Space Trading And Combat Simulator server"
   :author "Kalman Kiss <kiskami@freemail.hu>"
   :license "GPL2"
-  :depends-on (#:llgs-engine-cl)
+  :depends-on (#:yastacs-common)
   :components ((:module "server" :components
 			((:file "package")
 			 (:file "yastacs")))))

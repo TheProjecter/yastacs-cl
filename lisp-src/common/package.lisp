@@ -1,4 +1,4 @@
-;;;; yastacs-client
+;;;; yastacs common
 ;;;; Copyright (c) 2014 Kalman Kiss, Zalaegerszeg Hungary
 ;;;; 
 ;;;; This program is free software; you can redistribute it and/or modify
@@ -15,20 +15,7 @@
 ;;;; along with this program; if not, write to the Free Software
 ;;;; Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 ;;;;
-;;;; yastacs-client.asd
+;;;; package.lisp
 
-(defpackage #:yastacs-system
-  (:use #:cl #:asdf))
-(in-package #:yastacs-system)
-
-(asdf:defsystem #:yastacs-client
-;  :serial t
-  :description "Yet Another Space Trading And Combat Simalator game client"
-  :author "Kalman Kiss <kiskami@freemail.hu>"
-  :license "GPL2"
-  :depends-on (#:llgs-engine-cl #:yastacs-common)
-  :components ((:module "client" :components
-			((:file "package")
-			 (:file "specials" :depends-on ("package"))
-			 (:file "config" :depends-on ("package"))
-			 (:file "yastacs-client" :depends-on ("package" "specials" "config"))))))
+(defpackage #:yastacs-common
+  (:use #:cl))
