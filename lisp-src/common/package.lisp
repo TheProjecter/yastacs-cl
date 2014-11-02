@@ -18,4 +18,5 @@
 ;;;; package.lisp
 
 (defpackage #:yastacs-common
-  (:use #:cl))
+  (:use #:cl)
+  (:export :log_msg))

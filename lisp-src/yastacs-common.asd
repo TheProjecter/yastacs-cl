@@ -29,4 +29,6 @@
 ;  :depends-on ()
   :components ((:module "common" :components
 			((:file "package")
-			 (:file "universum" :depends-on ("package"))))))
+			 (:file "specials" :depends-on ("package"))
+			 (:file "log" :depends-on ("package"))
+			 (:file "universum" :depends-on ("package" "specials" "log"))))))

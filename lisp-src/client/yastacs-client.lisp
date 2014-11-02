@@ -27,7 +27,7 @@
 (in-package #:yastacs-client)
 
 (defun disp-name-and-license ()
-  (format t "~A~%~A~%~A~%" *GAMELABEL* *COPYRIGHT* *RIGHTS*))
+  (format t "~A~%~A~%~A~%" +GAMELABEL+ +COPYRIGHT+ +RIGHTS+))
 
 (defun conv-to-int (str)
   (parse-integer str :junk-allowed t))  
@@ -70,5 +70,5 @@
  -?
  --help - this help~%")
       (return-from client-run))
-
+    (yastacs-common:log_msg 'INFO "Parsing cmd args and loading config.")
     (setf *config* (parse-cmdargs args))))

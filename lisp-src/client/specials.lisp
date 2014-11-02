@@ -19,9 +19,9 @@
 
 (in-package #:yastacs-client)
 
-(defconstant *GAMELABEL* "YASTACS Client")
-(defconstant *GAMELABEL2* "Yet Another Space Trader And Combat Simulator")
-(defconstant *COPYRIGHT* "Copyright (c) 2014 Kalman Kiss, Zalaegerszeg Hungary
+(defconstant +GAMELABEL+ "YASTACS Client")
+(defconstant +GAMELABEL2+ "Yet Another Space Trader And Combat Simulator")
+(defconstant +COPYRIGHT+ "Copyright (c) 2014 Kalman Kiss, Zalaegerszeg Hungary
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -41,6 +41,6 @@ Source code is at http://code.google.com/p/yastacs
 Github mirror at https://github.com/kiskami/yastacs
 ")
 
-(defconstant *RIGHTS* "All rights reserved.")
+(defconstant +RIGHTS+ "All rights reserved.")
 
 (defparameter *config* nil "Global game configuration (Config class) instance.")

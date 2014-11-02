@@ -92,7 +92,18 @@
 
 ;;; ===============================================================
 
-(defun generate-universum (xd yd zd rndstate)
+(defun generate-universum (xd yd zd &optional (rndstate nil))
   (let ((u (make-univ :rndstate rndstate :dimension (list xd yd zd))))
-    (format t "Generating universum with dimensions (~A,~A,~A)~%" xd yd zd)
-    u))
+    (log_msg 'INFO (format nil "Generating universum with dimensions (~A,~A,~A)" xd yd zd))    
+    (setf (univ-rndstate u) (if (null rndstate)
+			      (progn 
+				(yastacs-common:log_msg 'WARN "Initializing new fresh random state")
+				(make-random-state t))
+			      rndstate))
+
+    
+    
+    
+    
+    u)
+  )
