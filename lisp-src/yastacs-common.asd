@@ -31,4 +31,5 @@
 			((:file "package")
 			 (:file "specials" :depends-on ("package"))
 			 (:file "log" :depends-on ("package"))
+			 (:file "utils" :depends-on ("package"))
 			 (:file "universum" :depends-on ("package" "specials" "log"))))))
